@@ -26,7 +26,8 @@ bash piconz.sh
 
 ## pigpiod As a Service
 `sudo nano /etc/systemd/system/syspgiod.service`
-```[Unit]
+```
+[Unit]
 Description=PiGPIO Daemon
 After=network.target syslog.target
 StartLimitIntervalSec=60
@@ -45,13 +46,16 @@ Restart=always
 RestartSec=10
 
 [Install]
-WantedBy=multi-user.target```
+WantedBy=multi-user.target
+```
 
-```sudo chmod 644 /etc/systemd/system/syspgiod.service
+```
+sudo chmod 644 /etc/systemd/system/syspgiod.service
 sudo systemd-analyze verify syspgiod.service
 sudo systemctl daemon-reload
 sudo systemctl enable syspgiod.service
-sudo systemctl start syspgiod.service```
+sudo systemctl start syspgiod.service
+```
 
 ## After Install
 * Reboot for i2c to take effect.
