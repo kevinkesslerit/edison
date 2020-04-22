@@ -1,5 +1,6 @@
 # Requirements
 
+# &#x1F514&#x1F514&#x1F514 PROJECT IS UNDER DEVELOPMENT AND UNSTABLE. &#x1F514&#x1F514&#x1F514
 ## OS
 * Raspbian
 * __**Enable i2c under Interfacing Options**__: `sudo raspi-config`
