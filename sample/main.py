@@ -98,7 +98,7 @@ def checkTick(nowTick = 0, pan = None, weight = 10):
       if pan == "F":
          print("FORWARD")
          #pz.forward(weight)
-      elif pan == "R":
+      elif pan == "B":
          print("REVERSE")
          #pz.reverse(weight)
 
@@ -114,7 +114,6 @@ def cbf(GPIO, level, tick):
          if 1490 <= diff <= 1510:
             checkTick(tick, "C", 1)
 
-         #BUG:: Also triggers Reverse: line 157
          #310 difference between center and right
          #Heavy Right
          elif 990 <= diff <= 1010:
@@ -152,10 +151,9 @@ def cbf(GPIO, level, tick):
          #1980-1985
          #7878-7885
 
-         #BUG:: Also triggers Heavy Right: line 117
          #494 difference between N and R
          elif 8879 <= diff <= 8885:
-            checkTick(tick, "R", speed)
+            checkTick(tick, "B", speed)
          #reverse::
          #984-991
          #8879-8885
