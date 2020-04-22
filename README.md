@@ -64,7 +64,7 @@ sudo systemctl start syspgiod.service
 
 # Notes
 * Only tested on Raspberry Pi Zero W (Linux edison 4.19.97+ #1294 Thu Jan 30 13:10:54 GMT 2020 armv6l GNU/Linux)
-* Do not forget to turn off your tx after using it.
+* Do not forget to turn off your tx (transmitter/controller) after using it.
 
 # Todo
 * Implement Blinkt!
@@ -77,3 +77,5 @@ sudo systemctl start syspgiod.service
 * Option for flight
 * Easter eggs in code
 * Autonomy at unexpected times
+* Setup script (setup.py)
+* Install main.py as service.
