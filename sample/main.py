@@ -61,7 +61,7 @@ lightPan=5
 
 #how quickly do we adjust the servo? 20000us = 200ms
 #increase for smoother reactions decrease for more sharpness
-panDelay=20000
+panDelay=15000
 
 #int, int, string <-- needs to be bit/int eventually
 def checkTick(nowTick = 0, pan = None, weight = 10):

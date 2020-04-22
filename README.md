@@ -77,6 +77,3 @@ sudo systemctl start syspgiod.service
 * Option for flight
 * Easter eggs in code
 * Autonomy at unexpected times
-
-# Problems in dev
-* Token signals on interval to every 250ms and only setOutput every 250ms
